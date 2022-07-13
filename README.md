@@ -7,9 +7,9 @@ This repository will hold the content for Kate's tutoring in Python while additi
 
 ## Steps:
 1. First accept the invitation for collaboration via GitHub
-	![notif_gif_image](/Imgs/notif_git.png)
+   <br> ![notif_gif_image](/Imgs/notif_git.png)
 2. Create a Fork
-   ![fork_image](Imgs/forked_image.png)
+   <br>![fork_image](Imgs/forked_image.png)
 
 ## In pycharm:
 
