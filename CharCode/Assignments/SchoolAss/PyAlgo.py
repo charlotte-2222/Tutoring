@@ -47,6 +47,10 @@ def occurWord():
     # reads number of times a word appears in a text file
     # outputs to a text file
     print("Occurrence of words printed to a text file")
+    with open(r'occurWord.txt', 'a') as f:
+        f.write("Occurrence of words printed to a text file\n")
+        f.write('{a:^8}{b:^2}{c:^8}'.format(a='Word', b="|", c='Occurrence'))
+        f.write('\n-------------------\n')
     with open(r'sample_text.txt', 'r') as file:
         data = file.read()
         lines = data.split()
@@ -57,7 +61,7 @@ def occurWord():
                 if word == word2:
                     occur += 1
             with open(r'occurWord.txt', 'a') as newfile:
-                newfile.write(puncRegex.sub('', word) +
+                newfile.write("\t" + puncRegex.sub('', word) +
                               " -> " + str(occur) + "\n")
 
 
@@ -65,6 +69,10 @@ def letterAlpha():
     # reads how many times words start with each letter of the alphabet
     # outputs to a text file
     print("Number of times a word starts with a letter printed to a text file")
+    with open(r'letterAlpha.txt', 'a') as f:
+        f.write("Number of times a word starts with a letter printed to a text file\n")
+        f.write('{a:^8}{b:^2}{c:^8}'.format(a='Word', b="|", c='Occurrence'))
+        f.write('\n-------------------\n')
     with open(r'sample_text.txt', 'r') as file:
         data = file.read()
         lines = data.split()
@@ -74,8 +82,7 @@ def letterAlpha():
                 if word[0] == chr(i + 97):
                     occur += 1
             with open(r'letterAlpha.txt', 'a') as newfile:
-                newfile.write(chr(i + 97) + " -> " + str(occur) + "\n")
-
+                newfile.write("\t" + chr(i + 97) + " -> " + str(occur) + "\n")
 
 
 def main():
