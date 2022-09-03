@@ -1,8 +1,8 @@
 Occurrence of words printed to a text file
   Word  | Occurrence
 -------------------
-	Hello -> 1
-	world -> 1
+	Hello -> 2
+	world -> 5
 	Im -> 1
 	here -> 1
 	to -> 6
@@ -10,132 +10,50 @@ Occurrence of words printed to a text file
 	a -> 12
 	sample -> 1
 	text -> 1
-	Hello -> 1
 	I -> 15
 	love -> 3
 	potatoes -> 1
 	and -> 2
-	Jesus -> 1
+	Jesus -> 3
 	And -> 1
-	I -> 15
 	think -> 1
-	Jesus -> 2
 	loves -> 2
 	me -> 1
-	Jesus -> 2
-	loves -> 2
 	cats -> 2
 	though -> 1
-	I -> 15
-	love -> 3
-	cats -> 2
 	too -> 1
 	If -> 1
 	the -> 5
-	world -> 4
 	were -> 1
-	to -> 6
 	be -> 5
 	dominated -> 1
 	by -> 1
 	an -> 1
 	Artificial -> 1
 	Intelligence -> 1
-	I -> 15
 	would -> 4
-	be -> 5
-	the -> 5
 	one -> 1
-	to -> 6
 	rule -> 4
 	it -> 2
-	I -> 15
 	am -> 4
 	not -> 3
-	a -> 12
 	robot -> 8
-	I -> 15
-	am -> 4
-	a -> 12
 	human -> 2
 	being -> 2
 	But -> 3
-	I -> 15
-	would -> 4
 	like -> 3
-	to -> 6
-	be -> 5
-	a -> 12
-	robot -> 8
-	I -> 15
 	could -> 3
-	rule -> 4
-	the -> 5
-	world -> 4
 	as -> 3
-	a -> 12
-	robot -> 8
-	I -> 15
-	am -> 4
-	a -> 12
-	robot -> 8
-	I -> 15
-	am -> 4
-	a -> 12
-	human -> 2
-	being -> 2
-	But -> 3
-	I -> 15
-	would -> 4
-	like -> 3
-	to -> 6
-	be -> 5
-	a -> 12
-	robot -> 8
-	I -> 15
-	could -> 3
-	rule -> 4
-	the -> 5
-	world -> 4
-	as -> 3
-	a -> 12
-	robot -> 8
 	Humans -> 1
 	are -> 2
-	not -> 3
-	robots -> 1
+	robots -> 2
 	Robots -> 1
-	are -> 2
-	not -> 3
 	humans -> 2
-	But -> 3
-	I -> 15
-	would -> 4
-	like -> 3
-	to -> 6
-	be -> 5
-	a -> 12
-	robot -> 8
-	I -> 15
-	could -> 3
-	rule -> 4
-	the -> 5
-	world -> 4
-	as -> 3
-	a -> 12
-	robot -> 8
 	Detroit -> 1
 	Become -> 1
 	Human -> 1
 	is -> 1
-	a -> 12
 	really -> 1
 	good -> 1
 	story -> 1
 	about -> 1
-	robots -> 1
-	and -> 2
-	humans -> 2
-	I -> 15
-	love -> 3
-	it -> 2

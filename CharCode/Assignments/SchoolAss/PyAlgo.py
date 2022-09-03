@@ -9,6 +9,11 @@ import re
 puncRegex = re.compile(r'[^a-zA-Z0-9\s]')
 
 
+# error handle for no file
+def noFile():
+    print("No file found")
+
+
 def wordCt():
     number_of_words = 0
     # Opening our text file in read only
@@ -51,18 +56,18 @@ def occurWord():
         f.write("Occurrence of words printed to a text file\n")
         f.write('{a:^8}{b:^2}{c:^8}'.format(a='Word', b="|", c='Occurrence'))
         f.write('\n-------------------\n')
+
     with open(r'sample_text.txt', 'r') as file:
         data = file.read()
         lines = data.split()
-        # split non-alpha characters
+        occur = {}
         for word in lines:
-            occur = 0
-            for word2 in lines:
-                if word == word2:
-                    occur += 1
+            # removes punctuation from words
+            word = puncRegex.sub('', word)
+            occur[word] = occur.get(word, 0) + 1
+        for word in occur:
             with open(r'occurWord.txt', 'a') as newfile:
-                newfile.write("\t" + puncRegex.sub('', word) +
-                              " -> " + str(occur) + "\n")
+                newfile.write("\t" + word + " -> " + str(occur[word]) + "\n")
 
 
 def letterAlpha():
@@ -97,4 +102,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except FileNotFoundError:
+        noFile()
